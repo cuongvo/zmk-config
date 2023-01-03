@@ -31,7 +31,7 @@
     quick-release;
 };
 
-// Keymap configuration (Colemak-DHm)
+// Keymap configuration
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -69,13 +69,13 @@
         layers {
 // ---------------------------------------------------------------------------------------------
 // |      |     |     |     |     |     | # |     |     |         |                |     |     |
-// | HELD |     |     |     |     |     | # |     |     | COLEMAK | GAMING_COLEMAK |     |     |
+// | HELD |     |     |     |     |     | # |     |     |         |                |     |     |
 // |      |     |     |     |     |     | # |     |     | QWERTY  | GAMING_QWERTY  |     |     |
 //                    |     |     |     | # |     |     |         |
 
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans       &trans              &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &to COLEMAK  &to GAMING_COLEMAK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans       &trans              &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &to QWERTY   &to GAMING_QWERTY   &trans  &trans
                         &trans  &trans  &trans        &trans  &trans  &trans
             >;
@@ -85,13 +85,13 @@
         navigation {
 // -------------------------------------------------------------------------------------------
 // |     |      |      |       |       |     | # | REDO  | CUT  | COPY | PASTE | UNDO  |     |
-// |     | LGUI | LALT | LCTRL | LSHFT |     | # | CAPS  | LEFT | DOWN | UP    | RIGHT |     |
+// |     | LGUI | LALT | LCTRL | LSHFT |     | # | LEFT  | DOWN | UP   | RIGHT | CAPS  |     |
 // |     |      | RALT |       |       |     | # | INS   | HOME | PGDN | PGUP  | END   |     |
 //                     |       | HELD  |     | # | ENTER | BSPC | DEL  |
 
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &trans        &kp K_REDO    &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_UNDO  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans        &kp CAPSLOCK  &kp LEFT   &kp DOWN    &kp UP       &kp RIGHT   &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans        &kp LEFT      &kp DOWN   &kp UP      &kp RIGHT    &kp CAPSLOCK &trans
 &trans  &trans    &kp RALT  &trans     &trans     &trans        &kp INS       &kp HOME   &kp PG_DN   &kp PG_UP    &kp END     &trans
                             &trans     &trans     &trans        &kp ENTER     &kp BSPC   &kp DEL
             >;
