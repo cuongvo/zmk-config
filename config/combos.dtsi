@@ -20,16 +20,21 @@
         compatible = "zmk,combos";
 
 COMBO(semi,   &kp SEMI,      7  8, QWERTY, 40)
-COMBO(lpar,   &kp LPAR,     14 15, QWERTY, 40)
-COMBO(rpar,   &kp RPAR,     18 19, QWERTY, 40)
-COMBO(lbkt,   &kp LBKT,     13 14, QWERTY, 40)
-COMBO(rbkt,   &kp RBKT,     19 20, QWERTY, 40)
-COMBO(tab,    &kp TAB,      13 15, QWERTY, 40)
-COMBO(bspc,   &kp BSPC,     18 20, QWERTY, 40)
-COMBO(grave,  &kp GRAVE,    25 26, QWERTY, 40)
-COMBO(tilde,  &kp TILDE,    24 25, QWERTY, 40)
-COMBO(bslh,   &kp BSLH,     29 30, QWERTY, 40)
-COMBO(pipe,   &kp PIPE,     30 31, QWERTY, 40)
-COMBO(capswd, &caps_word,   15 17, QWERTY, 60)
+
+COMBO(lpar,   &kp LPAR,     15 16, QWERTY, 40)
+COMBO(rpar,   &kp RPAR,     19 20, QWERTY, 40)
+
+COMBO(lbkt,   &kp LBKT,     14 15, QWERTY, 40)
+COMBO(rbkt,   &kp RBKT,     20 21, QWERTY, 40)
+
+COMBO(tab,    &kp TAB,      14 16, QWERTY, 40)
+COMBO(bspc,   &kp BSPC,     19 21, QWERTY, 40)
+
+COMBO(grave,  &kp GRAVE,    28 27, QWERTY, 40)
+COMBO(tilde,  &kp TILDE,    26 27, QWERTY, 40)
+
+COMBO(bslh,   &kp BSLH,     31 32, QWERTY, 40)
+COMBO(pipe,   &kp PIPE,     32 33, QWERTY, 40)
+COMBO(capswd, &caps_word,   16 18, QWERTY, 60)
     };
 };
