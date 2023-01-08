@@ -29,10 +29,6 @@
     tapping-term-ms = <150>;
 };
 
-&caps_word {
-    continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
-};
-
 // Keymap configuration
 / {
     behaviors {
@@ -71,26 +67,6 @@
             flavor = "balanced";
             bindings = <&mo>, <&bstab>;
         };
-    };
-
-    cond_layers {
-        compatible = "zmk,conditional-layers";
-        // Define FUN layer as tri-state
-        func_tristate {
-            if-layers = <NAV SYM>;
-            then-layer = <FUN>;
-        };
-    };
-
-    macros {
-        ZMK_MACRO(inv_qm,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
-                , <&macro_release &kp LALT>;
-        )
     };
 
     keymap {
