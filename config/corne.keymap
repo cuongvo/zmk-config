@@ -18,6 +18,8 @@
 #define TAB_RT LC(TAB)
 #define TAB_LT LC(LS(TAB))
 
+#include "combos.dtsi"
+
 // Behavior configuration
 &mt {
     flavor = "hold-preferred";
@@ -143,7 +145,7 @@
 
         function {
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5               &kp CAPS      &none         &to DEF       &to CLM        &to GME      &trans
+&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5               &kp CAPS      &none         &none         &none          &none        &trans
 &trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4 &trans
 &trans  &none         &kp D_LT      &kp D_RT      &kp F11       &kp F12              &out OUT_USB  &out OUT_BLE  &kp PSCRN     &kp PAUSE_BREAK &bt BT_CLR &trans
                          &bootloader   &reset        &trans            &trans        &reset        &bootloader
