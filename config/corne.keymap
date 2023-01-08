@@ -18,8 +18,6 @@
 #define TAB_RT LC(TAB)
 #define TAB_LT LC(LS(TAB))
 
-#include "combos.dtsi"
-
 // Behavior configuration
 &mt {
     flavor = "hold-preferred";
