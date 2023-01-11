@@ -21,7 +21,7 @@
 // Behavior configuration
 &mt {
     flavor = "hold-preferred";
-    tapping-term-ms = <150>;
+    tapping-term-ms = <180>;
 };
 
 &lt {
@@ -77,7 +77,7 @@
 &trans      &kp Q       &kp W       &kp E          &kp R          &kp T                &kp Y          &kp U         &kp I          &kp O         &kp P          &trans
 &trans      &kp A       &kp S       &kp D          &kp F          &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &trans
 &trans      &kp Z       &kp X       &kp C          &kp V          &kp B                &kp N          &kp M         &kp CMMA       &kp DOT       &lt FUN FSLH   &trans
-                                &mt LGUI ESC  &mt RSHFT TAB  &lt SYM SPACE    &lt_bspc NAV 0 &mt LCTRL RET &mt RALT DEL
+                                &mt LGUI ESC  &mt RSHFT TAB  &lt NAV SPACE    &lt_bspc SYM 0 &mt LCTRL RET &mt RALT DEL
             >;
         };
 
