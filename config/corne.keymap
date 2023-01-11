@@ -44,7 +44,7 @@
 &trans      &kp Q       &kp W       &kp E          &kp R          &kp T                &kp Y          &kp U         &kp I          &kp O         &kp P          &trans
 &trans      &kp A       &kp S       &kp D          &kp F          &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &trans
 &trans      &kp Z       &kp X       &kp C          &kp V          &kp B                &kp N          &kp M         &kp CMMA       &kp DOT       &lt FUN FSLH   &trans
-                                &mt LGUI ESC  &mt LSHFT TAB  &lt NAV SPACE    &lt SYM BSPC &mt LALT RET &mt LCTRL DEL
+                                &mt LGUI ESC  &sk LSHIFT  &lt NAV SPACE    &lt SYM BSPC &mt LALT RET &mt LCTRL TAB
             >;
         };
 
