@@ -20,8 +20,13 @@
 
 // Behavior configuration
 &mt {
-    flavor = "hold-preferred";
-    tapping-term-ms = <180>;
+    compatible = "zmk,behavior-hold-tap";
+    label = "MODS";
+    #binding-cells = <2>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <0>;
+    flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
 };
 
 &lt {
