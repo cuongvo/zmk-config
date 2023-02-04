@@ -41,9 +41,9 @@
 
         qwerty {
             bindings = <
-&trans      &kp Q       &kp W       &kp E          &kp R          &kp T                &kp Y          &kp U         &kp I          &kp O         &kp P          &trans
-&trans      &kp A       &kp S       &kp D          &kp F          &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &trans
-&trans      &kp Z       &kp X       &kp C          &kp V          &kp B                &kp N          &kp M         &kp CMMA       &kp DOT       &lt FUN FSLH   &trans
+&kp TAB      &kp Q       &kp W       &kp E          &kp R          &kp T                &kp Y          &kp U         &kp I          &kp O         &kp P          &kp MINUS 
+&kp ESC      &kp A       &kp S       &kp D          &kp F          &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &kp SQT
+&kp LCTRL      &kp Z       &kp X       &kp C          &kp V          &kp B                &kp N          &kp M         &kp CMMA       &kp DOT       &lt FUN FSLH   &kp LALT
                                 &mt LGUI ESC  &sk LSHIFT  &lt NAV SPACE    &lt SYM BSPC &mt LALT RET &mt LCTRL TAB
             >;
         };
