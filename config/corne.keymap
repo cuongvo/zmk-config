@@ -29,11 +29,11 @@
 
 &sk {
     release-after-ms = <1000>; 
-}
+};
 
 &sl {
     release-after-ms = <1000>;
-}
+};
 
 // Keymap configuration
 / {
@@ -43,7 +43,7 @@
         qwerty {
             bindings = <
 &kp TAB      &kp Q       &kp W       &kp E          &kp R          &kp T                &kp Y          &kp U         &kp I          &kp O         &kp P          &kp MINUS 
-&kp ESC      &kp A       &kp S       &kp D          &kp F          &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &kp SQT
+&gresc       &kp A       &kp S       &kp D          &kp F          &kp G                &kp H          &kp J         &kp K          &kp L         &kp SEMI       &kp SQT
 &sk LCTRL    &kp Z       &kp X       &kp C          &kp V          &kp B                &kp N          &kp M         &kp CMMA       &kp DOT       &lt FUN FSLH   &sk LALT
                                 &sk LGUI   &sk LSHIFT  &lt NAV SPACE                 &lt SYM BSPC &lt NUM RET &sl FUN
             >;
