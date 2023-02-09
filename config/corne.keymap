@@ -25,19 +25,13 @@
 // Keymap configuration
 / {
     behaviors {
-        gresc_shift: gresc_shift {
-            compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
-            #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp GRAVE>;
-            mods = <(MOD_LSFT)>;
-        };
         gresc: grave_escape {
             compatible = "zmk,behavior-mod-morph";
             label = "GRAVE_ESCAPE";
             #binding-cells = <0>;
-            bindings = <&gresc_shift>, <&kp GRAVE>;
-            mods = <(MOD_LGUI)>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_LGUI|MOD_LSFT)>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT)>;
         };
         u_mt: u_mt {
             compatible = "zmk,behavior-hold-tap";
