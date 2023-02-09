@@ -30,7 +30,7 @@
             label = "GRAVE_ESCAPE";
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&kp GRAVE>;
-            mods = <(MOD_LSHIFT)>;
+            mods = <(MOD_LSFT)>;
         };
         gresc: grave_escape {
             compatible = "zmk,behavior-mod-morph";
