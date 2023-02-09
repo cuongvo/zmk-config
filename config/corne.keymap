@@ -13,7 +13,9 @@
 
 // Behavior configuration
 &sk {
-    release-after-ms = <1000>; 
+    release-after-ms = <1000>;
+    tapping_term_ms = <200>;
+    flavor = "tap-preferred";
 };
 
 &sl {
@@ -23,6 +25,21 @@
 // Keymap configuration
 / {
     behaviors {
+        gresc_shift: gresc_shift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_ESCAPE";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_LSHIFT)>;
+        };
+        gresc: grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_ESCAPE";
+            #binding-cells = <0>;
+            bindings = <&gresc_shift>, <&kp GRAVE>;
+            mods = <(MOD_LGUI)>;
+            deactivate-mods;
+        };
         u_mt: u_mt {
             compatible = "zmk,behavior-hold-tap";
             label = "u_mt";
@@ -64,9 +81,9 @@
 
         symbols {
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp LBRC      &kp RBRC      &kp HASH       &kp BSLH      &kp N7        &kp N8        &kp N9        &kp COMMA    &trans
-&trans  &kp DLLR      &kp PRCNT     &kp LPAR      &kp RPAR      &kp EQUAL      &kp N0        &kp N4        &kp N5        &kp N6        &kp DOT      &trans
-&trans  &kp AMPS      &kp ASTRK     &kp LBKT      &kp RBKT      &kp CARET      &none         &kp N1        &kp N2        &kp N3        &kp SLASH    &trans
+&trans  &kp EXCL      &kp AT        &kp LBRC      &kp RBRC      &kp HASH       &none       &none      &none       &none      &none    &trans
+&trans  &kp DLLR      &kp PRCNT     &kp LPAR      &kp RPAR      &kp EQUAL      &none       &none      &none       &none      &none    &trans
+&trans  &kp AMPS      &kp ASTRK     &kp LBKT      &kp RBKT      &kp CARET      &none       &none      &none       &none      &none    &trans
                              &trans      &trans  &trans              &trans        &trans     &trans
             >;
         };
