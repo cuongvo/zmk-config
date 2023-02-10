@@ -30,7 +30,6 @@
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp TILDE>;
             mods = <(MOD_LGUI|MOD_LSFT)>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT)>;
         };
         u_mt: u_mt {
             compatible = "zmk,behavior-hold-tap";
