@@ -148,10 +148,11 @@
             compatible = "zmk,behavior-hold-tap";
             label = "u_lt";
             #binding-cells = <2>;
-            tapping_term_ms = <175>;
+            tapping_term_ms = <300>;
             flavor = "balanced";
-            bindings = <&mo>, <&kp>;
-            quick-tap-ms = <155>;
+            bindings = <&kp>, <&kp>;
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            global-quick-tap-ms = <150>;         // requires PR #1387
         };
         u_ltn: u_ltn {
             compatible = "zmk,behavior-hold-tap";
