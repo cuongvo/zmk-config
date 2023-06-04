@@ -67,7 +67,7 @@
 
         combo_ret {
             timeout-ms = <30>;
-            key-positions = <17 19>;
+            key-positions = <18 19>;
             bindings = <&kp RET>;
             layers = <0 1 2 3 4>;
         };
